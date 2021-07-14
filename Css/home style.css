@@ -1,0 +1,308 @@
+html {
+    scroll-behavior: smooth;
+  }
+  /* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
+
+html,
+body {
+  height: 100%;
+  
+}
+/* image shake code */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  
+}
+
+/* Header section */
+
+.header {
+    position: relative;
+    width: 100%;
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('C:/Users/parme/OneDrive/Desktop/14, My Profolio/Images/book.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 0.5rem;
+    margin-top: 20px;
+    text-align: right;
+}
+/* Header logo */
+  .header h1 {
+    position: absolute;
+    margin: 10px auto;
+    left: 2rem;
+    font-size:60px;
+    color: white;
+    font-style: bold;
+    text-shadow:4px 4px 5px rgb(6, 95, 80);
+  }
+  /* Header list */
+  nav li  {
+    display: inline;
+    width: 10%;
+    margin-right: 6rem;
+    font-family: Raleway, sans-serif;
+    padding: 10px 0;
+    
+  }
+  a {
+    display: inline-block;
+    width:5px;
+    padding: 20px 0;
+    text-decoration: none;
+    font-size:20px;
+    color:white;
+    font-style: bold;
+    text-shadow:4px 4px 5px  rgb(6, 95, 80);
+
+  }
+  /* body section */
+  body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0 16px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 204, 229);
+  }
+
+  /*JavaSript button*/
+  button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  	margin-top:10px;
+  	font-size: 16px;
+  	padding: 5px;
+}
+  
+    /* body h2 */
+  h2 {
+    font-family:Verdana, Geneva, Tahoma, 'sans-serif';
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 60px;
+  }
+  
+  /* about me full with paragraph and picture */
+  .about-me-container {
+    display: flex;
+    margin-top: 40px;
+  }
+    /* about me paragraph */
+  .about-me-text-container {
+    margin-right:16px;
+  }
+    /* about me paragraph first letter */
+  .first-letter {
+    font-size: 35px;
+    line-height: 70px;
+  }
+
+  /* about me picture */
+  .girl-pic {
+    width: 300px;
+    border-radius:12px;
+    flex-shrink: 0;
+    border: 2px solid black;
+  }
+  /* about me picture hover */
+  .girl-pic:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  /* project section */
+  #project{
+    background-color: rgb(126, 121, 128);
+    margin-top: 3rem;
+  
+  }
+/* project section heading */
+  .project h1{
+      color:black;
+      font-size: 40px;
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px white;
+    
+  }
+/* project section img */
+  .grid-container img{
+      height:400px;
+      width:400px;
+      border:5px solid black;
+      text-align: center;
+      border-radius: 13px;
+
+  }
+  /* project section image hover or shake style */
+  .grid-container img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  /* project section  with images links with grid */
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    margin:0 auto;
+    width:900px;
+    height:1600px;
+    }
+    /* project section images */
+    .grid-container img {
+       margin-right:20px;
+       font-size: 30px;
+       text-align: center;
+    }
+    /* project section grid image */
+    .img1{
+    margin:0;    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    }
+  .img2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+  }
+  /* project section heading of an images*/
+  figcaption{
+     margin-left: 100px;
+     font-size:30px;
+     font-style: italic;
+     font-weight: bold;
+     font-weight: bold;
+     text-shadow: 2px 2px 4px white;
+}
+figcaption h1{
+    text-decoration: underline;
+}
+/* skills section */
+#skills {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom:40px;
+}
+  /* skills section float */
+.skill-container {
+  margin-left:100px;
+  float:right;
+  height:400px;
+}
+/* skills section image */
+#skills .girl-pic {
+  width: 350px;
+  height:400px;
+  border-radius:12px;
+  flex-shrink: 0;
+  border: 2px solid black;
+}
+/* skills section heading */
+.skill-container h1{
+  font-size:45px;
+  font-style: italic;
+  font-weight: bold;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px white;
+
+}
+
+/* skills section list */
+.skill-container li{
+  font-size: 35px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+/* footer section heading */
+.footer h1{
+  font-size:55px;
+  font-style: italic;
+  font-weight: bold;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px white;
+  text-align: center;
+
+ }
+
+
+/*media responsive*/
+  @media only screen and (max-width: 600px) {
+    .about-me-container {
+      flex-direction: column;
+    }
+    nav li {
+        display: inline-block;
+      }
+      img{
+          float :left;
+      }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .girl-pic {
+     max-width: 100%;
+     height: auto;
+     display: block;
+    }
+    img {
+        float :left;
+    }
+    
+   }
+  
+  @media only screen and (max-width: 768px) {
+   .girl-pic {
+    max-width: 100%;
+    height: auto;
+    display: block;
+   }
+   
+   nav li {
+     display: inline-block;
+   }
+   img {
+    float :left;
+}
+  
+  }
+  
+  @media only screen and (max-width: 480px) {
+    nav li {
+      display: inline-block;
+    }
+   
+    .girl-pic{
+      max-width: 100%;
+      height: auto;
+      display: block;
+      overflow: hidden;
+    }
+    img {
+        float :left;
+    }
+   
+  }
+
+
+  
